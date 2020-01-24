@@ -36,7 +36,10 @@ $(document).ready(function () {
     if (reverse === 'reverse') {
       return returnedNumbes.reverse();
     } else {
-      return returnedNumbes;
+      if(returnedNumbes.length > 1000) {
+        return returnedNumbes = ['That number is way to long. Just put in 999 and imagine the rest.'];
+      }
+      return returnedNumbes
     }
   } //end build list.
 
