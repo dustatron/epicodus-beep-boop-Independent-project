@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var firstRun = true;
   
   function buildList(count, name) {
     var returnedNumbers = [];
@@ -31,10 +32,22 @@ $(document).ready(function(){
   } //end build list
 
   function printToDOM(array) {
-    $('#output').empty();
-    var front = "<div class='card'>";
+    var front = "<div class='card output--box text-center'>";
     var back = "</div>"
-    array.forEach(item => $('#output').append(front+item+back));
+
+    if(firstRun){
+      $('#output').hide().addClass('bottom-border');
+      array.forEach(item => $('#output').append(front+item+back));
+      $('#output').slideDown(900);
+      firstRun = false;
+    } else {
+      $('#output').slideUp( 500 ).promise().done(function(){
+        $('#output').empty();
+        array.forEach(item => $('#output').append(front+item+back));
+        $('#output').slideDown( 500 );
+      }); 
+    }
+
   }
 
   $('form').submit(function(event){
@@ -47,7 +60,6 @@ $(document).ready(function(){
     var userName = $('#user-name').val();
 
     printToDOM(buildList(userCount, userName));
-    console.log(buildList(userCount, userName));
   });
 
 });

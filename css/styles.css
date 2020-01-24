@@ -1,0 +1,27 @@
+/* #output{
+  display: none;
+} */
+.input-box {
+  box-shadow: 1px 1px 15px rgba(0,0,0,.1);
+  padding: 30px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  border-radius: 5px;;
+}
+
+.display-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.output--box {
+  padding: 20px;
+  margin: 3px 5px;
+}
+
+.bottom-border{
+  border-bottom: 3px solid rgba(0,0,0,.2);
+}
