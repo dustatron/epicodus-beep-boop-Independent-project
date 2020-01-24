@@ -72,8 +72,14 @@ $(document).ready(function () {
     //get reverse checkbox.
     var reverse = $("input:checked").val();
 
-    //end of logic
-    printToDOM(buildList(userCount, userName, reverse));
+    //validates the user input a number. 
+    if(isNaN(parseInt(userCount))){
+      alert("Please enter a valid number into the 'Number Range' input.")
+    } else {
+      //end of logic
+      printToDOM(buildList(userCount, userName, reverse));
+    }
+
   });
 
 });
