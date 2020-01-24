@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var firstRun = true;
+  $('#output').hide();
   
   function buildList(count, name) {
     var returnedNumbers = [];
@@ -36,7 +37,7 @@ $(document).ready(function(){
     var back = "</div>"
 
     if(firstRun){
-      $('#output').hide().addClass('bottom-border');
+      // $('#output').addClass('bottom-border');
       array.forEach(item => $('#output').append(front+item+back));
       $('#output').slideDown(900);
       firstRun = false;
