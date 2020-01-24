@@ -1,5 +1,7 @@
 # _Beep Boop Epicodus Independent Project_
 
+[Link to Demo site](https://dustatron.github.io/epicodus-beep-boop-Independent-project/)
+
 #### _This app will take numbers 1, 2, and 3 from a list of numbers and replace them with Beeps and Boops. | Jan.24.2020_
 
 #### By _**Dusty McCord**_
@@ -15,8 +17,19 @@ _A web application that takes a number from a user and returns a range of number
 Make sure you have [git version control](https://git-scm.com/downloads) installed on your computer.
 
 * _find the green 'Clone or Download' button and copy the link_
-* _open terminal and type cd /Desktop on a mac/linux on a windows type cd Desktop_
-* _in terminal type 'git clone {link to repository} ' note : remove {} from your command_
+* _open terminal and type 'cd desktop'_
+
+Windows
+```sh 
+cd desktop
+```
+
+ Mac & linux 
+ ```sh
+ cd ~/Desktop
+ ```
+
+* _in terminal type 'git clone {link to repository} '_
 
 ```sh
 git clone https://github.com/dustatron/epicodus-beep-boop-Independent-project.git
