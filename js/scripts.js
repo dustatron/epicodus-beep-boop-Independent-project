@@ -6,7 +6,7 @@ $(document).ready(function () {
   // ---------- CREATE LIST ----------
   function buildList(count, name, reverse) {
     var returnedNumbes = [];
-    var userInput = count;
+    var userInput = parseInt(count);
     var halString;
 
     //validate username exists. 
@@ -76,11 +76,14 @@ $(document).ready(function () {
     var reverse = $("input:checked").val();
 
     //validates the user input a number. 
-    if(isNaN(parseInt(userCount))){
+    if (isNaN(parseInt(userCount))){
       printToDOM(["Please enter a valid number into the 'Number Range' input."])
-    } else {
+    } else if (userCount.length < 4) {
+      console.log(userCount.length)
       //end of logic
       printToDOM(buildList(userCount, userName, reverse));
+    } else {
+      printToDOM(["Your number was to large"])
     }
 
   });
