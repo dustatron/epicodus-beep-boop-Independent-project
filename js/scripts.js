@@ -2,7 +2,7 @@ $(document).ready(function(){
   var firstRun = true;
   $('#output').hide();
   
-  function buildList(count, name) {
+  function buildList(count, name, reverse) {
     var returnedNumbers = [];
     var userInput = count;
     var halString;
@@ -29,7 +29,11 @@ $(document).ready(function(){
       }
     } // end for loop
 
-    return returnedNumbers;
+    if(reverse === 'reverse'){
+      return returnedNumbers.reverse();
+    } else {
+      return returnedNumbers;
+    }
   } //end build list
 
   function printToDOM(array) {
@@ -60,7 +64,11 @@ $(document).ready(function(){
     //get username
     var userName = $('#user-name').val();
 
-    printToDOM(buildList(userCount, userName));
+    //reverse checkbox
+    var reverse = $( "input:checked" ).val();
+    console.log(reverse);
+
+    printToDOM(buildList(userCount, userName, reverse));
   });
 
 });

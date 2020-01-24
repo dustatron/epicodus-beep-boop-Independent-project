@@ -13,8 +13,9 @@
 h1 {
   margin-bottom: 25px;
 }
-.hide {
-  display: none;
+
+.reverse--check-box {
+  margin-bottom: 10px;
 }
 
 .display-boxes {
@@ -30,17 +31,6 @@ h1 {
   position: relative;
   /* transition: all .5s; */
 }
-
-/* .display-boxes::after{
-  content: '';
-  height: 5px;
-  width: 70%;
-  background: rgba(161, 161, 161, 0.253);
-  position: absolute;
-  top: 100%;
-  left: 15%;
-  transition : all .5s linear;
-} */
 
 .output--box {
   padding: 20px;
