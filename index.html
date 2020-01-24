@@ -18,10 +18,33 @@
 <body>
   <div class="container">
     <h1 class="text-center">Beep Boop List Bot</h1>
-    <div class="col-6 offset-3">
-      
-    </div>
-  </div>
+
+    <!-- ---------------  FORM  ---------------  -->
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <div class="form-group">
+            <label for="user-name">Your Name</label>
+            <input type="name" class="form-control" id="user-name" aria-describedby="user name">
+            <small id="user-name-help" class="form-text text-muted">Enter your name to personalize the results</small>
+          </div>
+          <div class="form-group">
+            <label for="number-count">Number range</label>
+            <input type="number" class="form-control" id="number-count">
+            <small id="number-count-help" class="form-text text-muted">Enter a single number.</small>
+          </div>
+          <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button>
+        </form>
+      </div>
+    </div> <!-- form row end -->
+    
+    <!-- ---------------  OUTPUT  ---------------  -->
+    <div class="row">
+
+    </div> <!-- output end -->
+
+
+  </div> <!-- container end -->
   
 </body>
 </html>

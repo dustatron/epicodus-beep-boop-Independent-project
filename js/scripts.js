@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var returnedNumbers = [];
-  var userInput = 50;
+  var userInput = 100;
 
   for (let i = 0; i <= userInput; i++) {
     var index = Array.from(i.toString());
@@ -13,10 +13,8 @@ $(document).ready(function(){
       returnedNumbers.push("Beep!");
     } else {
       returnedNumbers.push(i);
-
     }
   }
-
 
   console.log(returnedNumbers)
 });
