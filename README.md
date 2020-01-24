@@ -19,7 +19,7 @@ Make sure you have [git version control](https://git-scm.com/downloads) installe
 * _in terminal type 'git clone {link to repository} ' note : remove {} from your command_
 
 ```sh
-git clone {link to repository}
+git clone https://github.com/dustatron/epicodus-beep-boop-Independent-project.git
 ```
 
 * _navigate to the new folder that was created on your desk_
