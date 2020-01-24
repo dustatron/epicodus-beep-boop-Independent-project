@@ -74,7 +74,8 @@ $(document).ready(function () {
 
     //validates the user input a number. 
     if(isNaN(parseInt(userCount))){
-      alert("Please enter a valid number into the 'Number Range' input.")
+      // alert("Please enter a valid number into the 'Number Range' input.")
+      printToDOM(["Please enter a valid number into the 'Number Range' input."])
     } else {
       //end of logic
       printToDOM(buildList(userCount, userName, reverse));
