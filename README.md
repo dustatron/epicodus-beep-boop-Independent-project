@@ -1,12 +1,14 @@
-# _{Project Title}_
+# _Beep Boop Epicodus Independent Project_
 
-#### _{quick one sentence description}, Jan.23.2020_
+#### _This app will take numbers 1, 2, and 3 from a list of numbers and replace them with Beeps and Boops. | Jan.24.2020_
 
-#### By _**Name 1 and Name 2**_
+#### By _**Dusty McCord**_
 
 ## Description
 
-_This app will take in words from a user and return the words in Pig Latin_
+_A web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions. Numbers with '1' will be replaced with 'Beep!', Numbers with '2' will be replaced with 'Boop!' and Numbers with '3' will be replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
+
+**Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5**
 
 ## Installation
 
@@ -30,9 +32,11 @@ git clone {link to repository}
 
 Behavior | Input |  Output
 ---------|-------|----
-The program does takes in a number and returns a number. | 1 | 1
-The program does takes in a number and returns a number. | 1 | 1
-The program does takes in a number and returns a number. | 1 | 1
+The program takes in a number 1 and replaces it with 'Beep!'. | 1 | Beep!
+The program takes in a number 2 and replaces it with 'Boop!'. | 2 | Boop!
+The program takes in a number 3 and replaces it with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | "I'm sorry, Dave. I'm afraid I can't do that."
+The program will priorities 3 over 2 and 1. | 321 | "I'm sorry, Dave. I'm afraid I can't do that."
+The program will priorities 2 over 1. | 21 | "Boop!"
 
 
 ## Support and contact details
