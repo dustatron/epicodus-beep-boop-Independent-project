@@ -49,8 +49,8 @@ The program returns a range of numbers from 0 to the users inputted number. | 4 
 The program takes in a number 1 and replaces it with 'Beep!'. | 1 | Beep!
 The program takes in a number 2 and replaces it with 'Boop!'. | 2 | Boop!
 The program takes in a number 3 and replaces it with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | "I'm sorry, Dave. I'm afraid I can't do that."
-The program will priorities 3 over 2 and 1. | 321 | "I'm sorry, Dave. I'm afraid I can't do that."
-The program will priorities 2 over 1. | 21 | "Boop!"
+The program will prioritize 3 over 2 and 1. | 321 | "I'm sorry, Dave. I'm afraid I can't do that."
+The program will prioritize 2 over 1. | 21 | "Boop!"
 
 
 ## Support and contact details
