@@ -1,4 +1,11 @@
 $(document).ready(function(){
-  console.log('JavaScipt is working');
-  
+  var returnedNumbers = [];
+  var userInput = 10;
+
+  for (let i = 0; i <= userInput; i++) {
+    returnedNumbers.push(i);
+  }
+
+
+  console.log(returnedNumbers)
 });
