@@ -1,6 +1,3 @@
-/* #output{
-  display: none;
-} */
 .input-box {
   box-shadow: 1px 1px 20px -1px rgba(0,0,0,.1);
   padding: 30px;
@@ -25,17 +22,13 @@ h1 {
   justify-content: start;
   padding-bottom: 25px;
   padding-top: 25px;
-  /* box-shadow: inset 2px 1px 10px rgba(0,0,0,.1); */
   border-radius: 5px 5px 1px 1px;
   border-bottom: 3px solid rgba(0,0,0,.2);
   position: relative;
-  /* transition: all .5s; */
 }
 
 .output--box {
   padding: 20px;
   margin: 3px 5px;
-  /* -webkit-box-shadow: inset 2px 1px 10px -4px rgba(0,0,0,.2); 
-  box-shadow: inset 2px 1px 10px -4px rgba(0,0,0,.2); */
   background: rgba(214, 214, 214, 0.1);
 }

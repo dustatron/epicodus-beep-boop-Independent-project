@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags for bootstrap 4 -->
   <meta charset="utf-8">
@@ -15,9 +16,10 @@
 
   <title>Beep Boop List Bot</title>
 </head>
+
 <body>
   <div class="container">
-    
+
     <!-- ---------------  FORM  ---------------  -->
     <div class="row">
       <div class="input-box col-md-6 offset-md-3">
@@ -25,12 +27,12 @@
         <form>
           <div class="form-group">
             <label for="user-name">Your Name</label>
-            <input type="name" class="form-control" id="user-name" aria-describedby="user name" value="Jan">
+            <input type="text" class="form-control" id="user-name" aria-describedby="user name">
             <small id="user-name-help" class="form-text text-muted">Enter your name to personalize the results</small>
           </div>
           <div class="form-group">
-            <label for="number-count">Number range</label>
-            <input type="number" class="form-control" id="number-count" value="25">
+            <label for="number-count">Number Range</label>
+            <input type="text" class="form-control" id="number-count">
             <small id="number-count-help" class="form-text text-muted">Enter a single number.</small>
           </div>
           <div class="form-check reverse--check-box">
@@ -41,16 +43,13 @@
         </form>
       </div>
     </div> <!-- form row end -->
-    
+
     <!-- ---------------  OUTPUT  ---------------  -->
     <div id="output-row" class="row">
-      <div id="output" class="display-boxes col-md-8 offset-md-2">
-        
-      </div>
+      <div id="output" class="display-boxes col-md-8 offset-md-2"></div>
     </div> <!-- output end -->
 
-
   </div> <!-- container end -->
-  
 </body>
+
 </html>

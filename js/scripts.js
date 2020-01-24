@@ -1,73 +1,78 @@
-$(document).ready(function(){
-  var firstRun = true;
-  $('#output').hide();
-  
+$(document).ready(function () {
+
+  var firstRun = true; //create first run state for list animation. 
+  $('#output').hide(); //set hide to output box to avoid styles conflict with flex-box.
+
+  // ---------- CREATE LIST ----------
   function buildList(count, name, reverse) {
-    var returnedNumbers = [];
+    var returnedNumbes = [];
     var userInput = count;
     var halString;
 
     //validate username exists. 
-    if(name){
-      halString = "I'm sorry, "+name+". I'm afraid I can't do that.";
+    if (name) {
+      halString = "I'm sorry, " + name + ". I'm afraid I can't do that.";
     } else {
-      halString = "I'm sorry, Dave. I'm afraid I can't do that."
+      halString = "I'm sorry, Dave. I'm afraid I can't do that.";
     }
-  
+
+    // populate returnNames array.
     for (let i = 0; i <= userInput; i++) {
-      
+
       var index = Array.from(i.toString());
 
       if (index.includes('3')) {
-        returnedNumbers.push(halString);
-      } else if (index.includes('2'))  {
-        returnedNumbers.push("Boop!");
+        returnedNumbes.push(halString);
+      } else if (index.includes('2')) {
+        returnedNumbes.push("Boop!");
       } else if (index.includes('1')) {
-        returnedNumbers.push("Beep!");
+        returnedNumbes.push("Beep!");
       } else {
-        returnedNumbers.push(i);
+        returnedNumbes.push(i);
       }
-    } // end for loop
+    } // end for loop.
 
-    if(reverse === 'reverse'){
-      return returnedNumbers.reverse();
+    //validate reverse button was checked.
+    if (reverse === 'reverse') {
+      return returnedNumbes.reverse();
     } else {
-      return returnedNumbers;
+      return returnedNumbes;
     }
-  } //end build list
+  } //end build list.
 
+  // ---------- WRITE TO DOM ----------
   function printToDOM(array) {
     var front = "<div class='card output--box text-center'>";
-    var back = "</div>"
+    var back = "</div>";
 
-    if(firstRun){
-      // $('#output').addClass('bottom-border');
-      array.forEach(item => $('#output').append(front+item+back));
+    //create animation change based on state of 'firstRun'.
+    if (firstRun) {
+      array.forEach(item => $('#output').append(front + item + back));
       $('#output').slideDown(900);
       firstRun = false;
     } else {
-      $('#output').slideUp( 500 ).promise().done(function(){
+      $('#output').slideUp(500).promise().done(function () {
         $('#output').empty();
-        array.forEach(item => $('#output').append(front+item+back));
-        $('#output').slideDown( 500 );
-      }); 
+        array.forEach(item => $('#output').append(front + item + back));
+        $('#output').slideDown(500);
+      });
     }
-
   }
 
-  $('form').submit(function(event){
+  // ---------- BUTTON ACTION ----------
+  $('form').submit(function (event) {
     event.preventDefault();
 
-    //get user number
+    //get user number.
     var userCount = $('#number-count').val();
 
-    //get username
+    //get username.
     var userName = $('#user-name').val();
 
-    //reverse checkbox
-    var reverse = $( "input:checked" ).val();
-    console.log(reverse);
+    //get reverse checkbox.
+    var reverse = $("input:checked").val();
 
+    //end of logic
     printToDOM(buildList(userCount, userName, reverse));
   });
 
