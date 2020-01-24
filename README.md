@@ -32,6 +32,7 @@ git clone {link to repository}
 
 Behavior | Input |  Output
 ---------|-------|----
+The program returns a range of numbers from 0 to the users inputted number. | 4 | 0, 1, 2, 3, 4
 The program takes in a number 1 and replaces it with 'Beep!'. | 1 | Beep!
 The program takes in a number 2 and replaces it with 'Boop!'. | 2 | Boop!
 The program takes in a number 3 and replaces it with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | "I'm sorry, Dave. I'm afraid I can't do that."
