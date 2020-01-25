@@ -68,4 +68,4 @@ _Use at your own risk_
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-Copyright (c) 2020**_Josh Hellman and Dusty McCord and the whole Epicodus class_**
+Copyright (c) 2020**_ Dusty McCord_**
