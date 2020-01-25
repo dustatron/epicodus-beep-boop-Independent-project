@@ -37,7 +37,7 @@ git clone https://github.com/dustatron/epicodus-beep-boop-Independent-project.gi
 
 4. navigate to the new folder that was created on your desk
 5. select index.html
-6. right click and select open with
+6. right click on the file and select _'open with'_
 7. select your browser
 8. enjoy a Pig Latin translate with your whole family
 
@@ -55,7 +55,7 @@ The program will prioritize 2 over 1. | 21 | "Boop!"
 
 ## Support and contact details
 
-_Use at your own risk_
+_The software is provided as is. It might work as expected - or not. Just don't blame me._
 
 ## Built With
 
