@@ -1,6 +1,6 @@
-# _Beep Boop Epicodus Independent Project_
+# Beep Boop Epicodus Independent Project 
 
-[Link to Demo site](https://dustatron.github.io/epicodus-beep-boop-Independent-project/)
+[Link to demo site](https://dustatron.github.io/epicodus-beep-boop-Independent-project/)
 
 #### _This app will take numbers 1, 2, and 3 from a list of numbers and replace them with Beeps and Boops. | Jan.24.2020_
 
@@ -14,12 +14,12 @@ _A web application that takes a number from a user and returns a range of number
 
 ## Installation
 
-Make sure you have [git version control](https://git-scm.com/downloads) installed on your computer.
+_Make sure you have [git version control](https://git-scm.com/downloads) installed on your computer._
 
-* _find the green 'Clone or Download' button and copy the link_
-* _open terminal and type 'cd desktop'_
+1. find the green 'Clone or Download' button and copy the link
+2. open terminal and type...
 
-Windows
+**Windows**
 ```sh 
 cd desktop
 ```
@@ -29,17 +29,17 @@ cd desktop
  cd ~/Desktop
  ```
 
-* _in terminal type 'git clone {link to repository} '_
+ 3. in terminal type '_git clone {link to repository}_ '
 
 ```sh
 git clone https://github.com/dustatron/epicodus-beep-boop-Independent-project.git
 ```
 
-* _navigate to the new folder that was created on your desk_
-* _select index.html_
-* _right click and select open with_
-* _select your browser_
-* _enjoy a Pig Latin translate with your whole family_
+4. navigate to the new folder that was created on your desk
+5. select index.html
+6. right click and select open with
+7. select your browser
+8. enjoy a Pig Latin translate with your whole family
 
 ## Behavior Driven Development Specifications
 
